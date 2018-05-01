@@ -16,11 +16,8 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 public class OffsetBasedPageableHandlerMethodArgumentResolver implements PageableArgumentResolver {
 
     private static final SortHandlerMethodArgumentResolver DEFAULT_SORT_RESOLVER = new SortHandlerMethodArgumentResolver();
-    private SortArgumentResolver sortResolver;
-
     private static final String DEFAULT_QUALIFIER_DELIMITER = "_";
-
-
+    private SortArgumentResolver sortResolver;
     private String qualifierDelimiter = DEFAULT_QUALIFIER_DELIMITER;
 
     public OffsetBasedPageableHandlerMethodArgumentResolver() {
